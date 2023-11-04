@@ -6,7 +6,9 @@ function App() {
   //   alert(`Hice click en el boton buscar`);
   // };
 
-  // AGREGAR AQUI FUNCION QUITAR
+  // const quitar = () => {
+  //   alert(`Hice click en el boton quitar`);
+  // };
 
   return (
     <div>

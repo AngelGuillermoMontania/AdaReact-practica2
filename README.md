@@ -2,7 +2,7 @@
 
 ### Ejercicio
 
-Vamos a aplicar algunos conceptos sobre condicionales.
+Vamos a aplicar algunos conceptos sobre condicionales y eventos.
 
 > **Nota**: Todos los Componentes que hagamos en esta practica son `Puros` y `Funcionales`, por lo tanto, ninguno tiene estado, simplemente reciben datos por props y son funciones.
 >
@@ -36,11 +36,13 @@ Ahora que ya tenemos cada una de las partes de nuestra aplicación procedamos a 
 </p>
 
 - **Recuadro rojo**: Nav
-- **Recuadro amarillo**: SearchBar
-- **Recuadro verde**: ContainCard
-- **Recuadro azul**: Card
+- **Recuadro verde**: SearchBar
+- **Recuadro azul**: ContainCard
+- **Recuadro amarillo**: Card
 
 3. Dentro del archivo `App.js` cambiar el contenido si aun no lo hiciste, recordemos en la ejercitacion pasada, modificamos el componente `App.jsx`. Recordar que cada una de las tarjetas del clima (`Card`) están incluidas dentro de un componente superior (`ContainCards`) y que el `SearchBar` se encuentra dentro del `Nav` por lo que solo deberíamos agregar acá los componentes `Nav` y `ContainCard`.
+
+> Nota: Si hiciste la ejercitacion pasada, saltear este punto aclaracion ya que tu ContainCard ya deberia estar correctamente implementado.
 
 - Importar los componentes que vamos a utilizar
 
@@ -63,8 +65,6 @@ import ContainCard from './components/ContainCard.jsx';
 ```
 
 Inicialmente si nuestro componente ContainCard no está recibiendo datos de ciudades la aplicación se vería de la siguiente forma:
-
-> Nota: Si hiciste la ejercitacion pasada, saltear la esta aclaracion ya que tu ContainCard ya deberia estar correctamente implementado.
 
 <p align="center">
   <img src="./img-screen/barra-busqueda.png" alt="Gif" />
@@ -114,17 +114,21 @@ Este Componente va a servir para renderizar muchos Componentes `Cards`. Básicam
 
 > Ahora preguntemonos? Que sucederia si no existieran ciudades? Como deberiamos mostrar el componente? Para ello vamos a utilizar un condicional para mostrar un mensaje en caso de que no existan ciudades. (Ternario)
 
-![](./img/Cards.png)
+![](./img/ContainCards.png)
 
 #### **Card (`components/Card.js`)**
 
 Esta tarjeta va a mostrar los datos de una ciudad con una imagen que representa el estado del clima (soleado, nublado, etc..), además cuando el usuario haga click en la X de cerrar, se invocará una función que tambien viene como prop.
 
-![](./img/WeatherCard.png)
+![](./img/Card.png)
 
 > Aqui debemos nuevamente preguntarnos, que sucederia si no existiera uno o mas datos (Por culpa de la api)? Por ejemplo, si el dato `Humidity` llegara como `Null`? Como deberiamos mostrar el componente? Nos daria un error, para ello vamos a mostrar el texto "Inexistente" en caso de que no exista el dato. (Condicion corta, OR)
 
 > Y si queremos dar un estilo diferente a las tarjetas que tengan una temperatura mayor a 25° o menor a 5°? Para ello, (Nuevamente a modo de practica no se preocupen si se ve bonito o no) mostrar la tarjeta o la temperatura en rojo si es mayor a 25° o en azul si es menor a 5°.
+
+## 7. El desafio en este punto es lograr eliminar correctamente una ciudad del array de ciudades al hacer click en el boton 'X' de la tarjeta. Para ello, debemos pasarle a la funcion onClose, el id de esa ciudad.
+
+<br><br>
 
 ### Instrucciones para correr el proyecto
 

@@ -1,4 +1,8 @@
 export default function SearchBar({ onSearch }) {
-  // acá va tu código
-  return <div></div>;
+  return (
+    <form onSubmit={onSearch}>
+      <input type="text" placeholder="Ciudad..." />
+      <button type="submit">Agregar</button>
+    </form>
+  );
 }

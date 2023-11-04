@@ -1,4 +1,3 @@
-export default function Card(/* Recibir las props */) {
-  // acá va tu código
+export default function Card() {
   return <div></div>;
 }
