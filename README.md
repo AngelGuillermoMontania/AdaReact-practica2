@@ -10,7 +10,7 @@ Vamos a aplicar algunos conceptos sobre condicionales y eventos.
 
 No es necesario volver a correr el proyecto cada vez que se realice un cambio sino que se verá automáticamente reflejando en el navegador.
 
-> Hay veces que por problemas de configuración los cambios no se ven automáticamente reflejados en el navegador por lo que si te ocurre esto la opción rápida sería refrescar la pagina y si no, parar la ejecición del proyecto (Ctrl + C) y volver a ejecutar `npm wun dev`. De todas formas si te ocurre esto contactate con tu Profe o Tutor/Tutora.
+> Hay veces que por problemas de configuración los cambios no se ven automáticamente reflejados en el navegador por lo que si te ocurre esto la opción rápida sería refrescar la pagina y si no, parar la ejecición del proyecto (Ctrl + C) y volver a ejecutar `npm run dev`. De todas formas si te ocurre esto contactate con tu Profe o Tutor/Tutora.
 
 ### Ejercitación
 
