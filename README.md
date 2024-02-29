@@ -29,7 +29,7 @@ No es necesario volver a correr el proyecto cada vez que se realice un cambio si
 - **Recuadro rojo**: Nav
 - **Recuadro verde**: SearchBar
 
-Ahora que ya tenemos cada una de las partes de nuestra aplicación procedamos a unirlas. Para ello veamos una imagen del resultado final y pensemos la estrucutra general:
+Ahora que ya tenemos cada una de las partes de nuestra aplicación procedamos a unirlas. Para ello veamos una imagen del resultado final y pensemos la estructura general:
 
 <p align="center">
   <img src="./img-screen/componentes.png" alt="Gif" />
